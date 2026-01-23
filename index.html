@@ -45,7 +45,7 @@
       body {
         font-family: "Inter", "SF Pro Display", -apple-system,
           BlinkMacSystemFont, sans-serif;
-        line-height: 1.7;
+        line-height: 1.6;
         color: var(--text-dark);
         background-color: var(--light-bg);
         font-weight: 400;
@@ -65,7 +65,7 @@
           var(--primary-blue) 100%
         );
         color: var(--white);
-        padding: 4rem 0;
+        padding: 2.5rem 0;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -84,42 +84,43 @@
         border-radius: 50%;
         object-fit: cover;
         border: 4px solid var(--white);
-        margin: 0 auto 2rem;
+        margin: 0 auto 1.5rem;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         overflow: hidden;
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 0.5rem;
         font-weight: 700;
         letter-spacing: -0.5px;
       }
 
       .subtitle {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 500;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         color: rgba(255, 255, 255, 0.95);
       }
 
       .research-focus {
-        font-size: 1.1rem;
+        font-size: 1rem;
         opacity: 0.9;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
-        padding: 1rem;
+        padding: 0.75rem;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         border-left: 4px solid var(--accent-gold);
+        line-height: 1.5;
       }
 
       /* Academic Navigation */
       nav {
         background: var(--white);
-        padding: 1rem 0;
+        padding: 0.75rem 0;
         box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
         position: sticky;
         top: 0;
@@ -131,17 +132,17 @@
         display: flex;
         justify-content: center;
         list-style: none;
-        gap: 2rem;
+        gap: 1.5rem;
       }
 
       .nav-links a {
         text-decoration: none;
         color: var(--text-dark);
         font-weight: 500;
-        padding: 0.5rem 1.5rem;
+        padding: 0.4rem 1.2rem;
         border-radius: 25px;
         transition: all 0.3s ease;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         border: 2px solid transparent;
       }
 
@@ -154,7 +155,7 @@
 
       /* Academic Section Styles */
       section {
-        padding: 5rem 0;
+        padding: 2.5rem 0;
       }
 
       section:nth-child(even) {
@@ -163,11 +164,11 @@
 
       .section-header {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
       }
 
       .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         color: var(--primary-dark);
         font-weight: 700;
         margin-bottom: 0.5rem;
@@ -178,10 +179,10 @@
       .section-title::after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: -8px;
         left: 50%;
         transform: translateX(-50%);
-        width: 80px;
+        width: 70px;
         height: 4px;
         background: var(--accent-teal);
         border-radius: 2px;
@@ -189,27 +190,32 @@
 
       .section-subtitle {
         color: var(--text-light);
-        font-size: 1.1rem;
+        font-size: 1rem;
         max-width: 600px;
-        margin: 1rem auto 0;
+        margin: 0.5rem auto 0;
+        line-height: 1.5;
       }
 
       /* Research Impact Section */
       .research-impact-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
       }
 
       .impact-card {
         background: var(--white);
-        padding: 2.5rem;
-        border-radius: 12px;
+        padding: 1.25rem;
+        border-radius: 10px;
         box-shadow: var(--card-shadow);
         text-align: center;
         transition: transform 0.3s ease;
         border-top: 4px solid var(--accent-teal);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       .impact-card:hover {
@@ -217,44 +223,53 @@
       }
 
       .impact-number {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
         color: var(--primary-blue);
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         line-height: 1;
       }
 
       .impact-label {
         color: var(--text-light);
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 1px;
+        margin-bottom: 0.75rem;
+      }
+
+      .impact-card p {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--text-light);
+        line-height: 1.4;
+        flex-grow: 1;
       }
 
       /* Featured Research */
       .featured-research {
         background: linear-gradient(135deg, #f8fafc 0%, #e6fffa 100%);
-        padding: 4rem 0;
-        margin: 2rem 0;
-        border-radius: 15px;
+        padding: 2rem 0;
+        margin: 1.5rem 0;
+        border-radius: 12px;
       }
 
       .research-paper {
         max-width: 900px;
         margin: 0 auto;
         background: var(--white);
-        padding: 3rem;
-        border-radius: 12px;
+        padding: 1.75rem;
+        border-radius: 10px;
         box-shadow: var(--card-shadow);
         border-left: 6px solid var(--accent-gold);
       }
 
       .paper-header {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
       }
 
       .paper-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: var(--primary-dark);
         margin-bottom: 0.5rem;
         line-height: 1.3;
@@ -262,81 +277,90 @@
 
       .paper-meta {
         color: var(--text-light);
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
       }
 
       .paper-abstract {
-        font-size: 1.1rem;
-        line-height: 1.8;
+        font-size: 1rem;
+        line-height: 1.6;
         color: var(--text-dark);
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         border-left: 3px solid var(--accent-teal);
-        padding-left: 1.5rem;
+        padding-left: 1rem;
       }
 
       /* Academic Projects Grid */
       .academic-projects {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2.5rem;
-        margin-top: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        margin-top: 1.5rem;
       }
 
       .academic-project {
         background: var(--white);
-        border-radius: 12px;
+        border-radius: 10px;
         overflow: hidden;
         box-shadow: var(--card-shadow);
         transition: all 0.3s ease;
         border: 1px solid #e2e8f0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
       }
 
       .academic-project:hover {
         transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
       }
 
       .project-header {
-        padding: 2rem 2rem 1rem;
+        padding: 1.25rem 1.25rem 0.75rem;
         border-bottom: 1px solid #e2e8f0;
       }
 
       .project-title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: var(--primary-dark);
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.3;
       }
 
       .project-context {
         color: var(--primary-blue);
         font-weight: 600;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
       }
 
       .project-body {
-        padding: 1.5rem 2rem;
+        padding: 1rem 1.25rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
       }
 
       .project-description {
         color: var(--text-dark);
-        line-height: 1.7;
-        margin-bottom: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        flex-grow: 1;
       }
 
       .project-technical {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
+        gap: 0.4rem;
+        margin-bottom: 1rem;
       }
 
       .tech-badge {
         background: #e2e8f0;
         color: var(--text-dark);
-        padding: 0.4rem 1rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 16px;
+        font-size: 0.75rem;
         font-weight: 500;
       }
 
@@ -345,10 +369,136 @@
         color: var(--white);
       }
 
+      .project-links {
+        margin-top: auto;
+      }
+
+      /* Academic Awards */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.award-card {
+  background: var(--white);
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  border: 1px solid #e2e8f0;
+  height: 100%;
+  padding-top: 1.5rem;
+}
+
+.award-icon {
+  position: absolute;
+  top: -3px;
+  left: 20px;
+  font-size: 1.4rem; /* CHANGED: 1.8rem → 1.4rem (smaller) */
+  z-index: 2;
+}
+
+.award-title {
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+  margin-top: 0.5rem;
+}
+
+.award-organization {
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.award-description {
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.award-links {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+}
+      /* Technical Skills Matrix */
+      .skills-matrix {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .skill-category {
+        background: var(--white);
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: var(--card-shadow);
+        height: 100%;
+      }
+
+      .skill-category h3 {
+        color: var(--primary-dark);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--accent-teal);
+        font-size: 1.2rem;
+      }
+
+      .skill-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .skill-list li {
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        position: relative;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      .skill-list li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent-teal);
+      }
+
+      .skill-level {
+        margin-bottom: 0.75rem;
+      }
+
+      .skill-name {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+      }
+
+      .skill-bar {
+        height: 5px;
+        background: #e2e8f0;
+        border-radius: 3px;
+        overflow: hidden;
+      }
+
+      .skill-progress {
+        height: 100%;
+        background: var(--accent-teal);
+        border-radius: 3px;
+      }
+
       /* Academic Timeline */
       .timeline {
         max-width: 900px;
-        margin: 3rem auto;
+        margin: 2rem auto;
         position: relative;
       }
 
@@ -363,7 +513,7 @@
       }
 
       .timeline-item {
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
         position: relative;
         width: 45%;
       }
@@ -378,7 +528,7 @@
 
       .timeline-content {
         background: var(--white);
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 8px;
         box-shadow: var(--card-shadow);
         border-left: 4px solid var(--primary-blue);
@@ -387,110 +537,29 @@
       .timeline-date {
         color: var(--accent-teal);
         font-weight: 600;
+        margin-bottom: 0.4rem;
+        font-size: 0.85rem;
+      }
+
+      .timeline-content h3 {
+        font-size: 1.1rem;
         margin-bottom: 0.5rem;
+        color: var(--primary-dark);
+      }
+
+      .timeline-content p {
         font-size: 0.9rem;
-      }
-
-      /* Academic Awards */
-      .awards-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-
-      .award-card {
-        background: var(--white);
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: var(--card-shadow);
-        position: relative;
-        border: 1px solid #e2e8f0;
-      }
-
-      .award-card::before {
-        content: "🏆";
-        position: absolute;
-        top: -15px;
-        left: 20px;
-        font-size: 1.5rem;
-        background: var(--white);
-        padding: 5px;
-        border-radius: 50%;
-        border: 2px solid var(--accent-gold);
-      }
-
-      .award-title {
-        font-size: 1.2rem;
-        color: var(--primary-dark);
-        margin-bottom: 0.5rem;
-      }
-
-      .award-organization {
-        color: var(--primary-blue);
-        font-weight: 600;
-        font-size: 0.95rem;
-        margin-bottom: 1rem;
-      }
-
-      .award-description {
+        line-height: 1.5;
         color: var(--text-dark);
-        font-size: 0.95rem;
-        line-height: 1.6;
-      }
-
-      /* Technical Skills Matrix */
-      .skills-matrix {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2.5rem;
-        margin-top: 3rem;
-      }
-
-      .skill-category {
-        background: var(--white);
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: var(--card-shadow);
-      }
-
-      .skill-category h3 {
-        color: var(--primary-dark);
-        margin-bottom: 1.5rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid var(--accent-teal);
-      }
-
-      .skill-level {
-        margin-bottom: 1rem;
-      }
-
-      .skill-name {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 0.5rem;
-      }
-
-      .skill-bar {
-        height: 6px;
-        background: #e2e8f0;
-        border-radius: 3px;
-        overflow: hidden;
-      }
-
-      .skill-progress {
-        height: 100%;
-        background: var(--accent-teal);
-        border-radius: 3px;
       }
 
       /* Academic Footer */
       .academic-footer {
         background: var(--primary-dark);
         color: var(--white);
-        padding: 3rem 0;
+        padding: 2rem 0;
         text-align: center;
-        margin-top: 4rem;
+        margin-top: 3rem;
       }
 
       .footer-content {
@@ -501,8 +570,8 @@
       .academic-contact {
         display: flex;
         justify-content: center;
-        gap: 3rem;
-        margin: 2rem 0;
+        gap: 2rem;
+        margin: 1.5rem 0;
       }
 
       .contact-link {
@@ -515,6 +584,7 @@
         border-radius: 25px;
         transition: all 0.3s ease;
         background: rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
       }
 
       .contact-link:hover {
@@ -538,21 +608,55 @@
           margin-left: 60px !important;
         }
 
-        .academic-projects {
+        .academic-projects,
+        .awards-grid,
+        .research-impact-grid {
           grid-template-columns: 1fr;
         }
 
         h1 {
-          font-size: 2.2rem;
+          font-size: 2rem;
         }
 
         .section-title {
-          font-size: 2rem;
+          font-size: 1.8rem;
+        }
+
+        .subtitle {
+          font-size: 1.1rem;
         }
 
         .academic-contact {
           flex-direction: column;
           gap: 1rem;
+        }
+
+        .skills-matrix {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header {
+          padding: 2rem 0;
+        }
+        
+        .profile-image {
+          width: 150px;
+          height: 150px;
+        }
+        
+        h1 {
+          font-size: 1.8rem;
+        }
+        
+        .section-title {
+          font-size: 1.6rem;
+        }
+        
+        .nav-links a {
+          padding: 0.3rem 0.8rem;
+          font-size: 0.85rem;
         }
       }
 
@@ -560,7 +664,7 @@
       @keyframes fadeInUp {
         from {
           opacity: 0;
-          transform: translateY(30px);
+          transform: translateY(20px);
         }
         to {
           opacity: 1;
@@ -569,7 +673,43 @@
       }
 
       .animate {
-        animation: fadeInUp 0.6s ease-out;
+        animation: fadeInUp 0.5s ease-out;
+      }
+
+      /* Utility Classes */
+      .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary-blue);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        background: rgba(45, 122, 122, 0.1);
+      }
+
+      .project-link:hover {
+        color: var(--accent-teal);
+        background: rgba(45, 122, 122, 0.2);
+      }
+
+      .view-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary-blue);
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .view-link:hover {
+        color: var(--accent-teal);
+        text-decoration: underline;
       }
     </style>
     <link
@@ -587,12 +727,12 @@
       <div class="container">
         <div class="header-content">
           <div class="profile-image" style="
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid white;
-  margin: 0 auto 2rem;
+  border: 4px solid white;
+  margin: 0 auto 1.5rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 ">
   <img
@@ -604,9 +744,9 @@
           <h1>Bader Aljaberi</h1>
           <p class="subtitle">Computer Science Research | Social Impact Innovation</p>
           <p class="research-focus">
-            Developing bilingual AI systems for underrepresented communities. Published TechRxiv research on AAC technology reaching 2,200+ non-speaking individuals
+            Developing bilingual AI systems for underrepresented communities. Published TechRxiv research on AAC technology reaching 2,200+ non-speaking individuals.
           </p>
-          <p style="opacity: 0.8; margin-top: 1.5rem">
+          <p style="opacity: 0.8; margin-top: 1rem; font-size: 0.95rem">
             Prospective Computer Science Undergraduate Fall 2026 | Research Focus: Human-Centered AI
           </p>
         </div>
@@ -618,10 +758,10 @@
       <div class="container">
         <ul class="nav-links">
           <li><a href="#research" class="active">Research</a></li>
-          <li><a href="#projects">Academic Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#awards">Awards</a></li>
           <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#timeline">Timeline</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -634,8 +774,7 @@
         <div class="section-header">
           <h2 class="section-title">Research Impact</h2>
           <p class="section-subtitle">
-            Quantifying the reach and influence of computational solutions for
-            social good
+            Quantifying the reach and influence of computational solutions for social good
           </p>
         </div>
 
@@ -643,43 +782,23 @@
           <div class="impact-card animate">
             <div class="impact-number">100+</div>
             <div class="impact-label">Downloads</div>
-            <p
-              style="
-                margin-top: 1rem;
-                font-size: 0.9rem;
-                color: var(--text-light);
-              "
-            >
-              VoiceBridge white paper published on TechRxiv for global
-              accessibility
+            <p>
+              VoiceBridge white paper published on TechRxiv for global accessibility
             </p>
           </div>
 
           <div class="impact-card animate">
             <div class="impact-number">300+</div>
             <div class="impact-label">Research Reach</div>
-            <p
-              style="
-                margin-top: 1rem;
-                font-size: 0.9rem;
-                color: var(--text-light);
-              "
-            >
-              VoiceBridge research viewed globally, showing international impact
-              and accessibility innovation recognition
+            <p>
+              VoiceBridge research viewed globally, showing international impact and accessibility innovation recognition
             </p>
           </div>
 
           <div class="impact-card animate">
             <div class="impact-number">35+</div>
-            <div class="impact-label">Families tested</div>
-            <p
-              style="
-                margin-top: 1rem;
-                font-size: 0.9rem;
-                color: var(--text-light);
-              "
-            >
+            <div class="impact-label">Families Tested</div>
+            <p>
               Direct user testing with non-speaking children and their families
             </p>
           </div>
@@ -690,24 +809,14 @@
           <div class="research-paper">
             <div class="paper-header">
               <div class="paper-title">
-                VoiceBridge: Bilingual Web-Based AAC Platform for Non-Speaking
-                Children Worldwide
+                VoiceBridge: Bilingual Web-Based AAC Platform for Non-Speaking Children Worldwide
               </div>
               <div class="paper-meta">
                 <strong>TechRxiv Preprint</strong> | November 2025 | Bahrain
               </div>
             </div>
             <div class="paper-abstract">
-              This research presents VoiceBridge, a culturally-aware bilingual
-              (Arabic-English) augmentative and alternative communication
-              platform developed to address the significant gap in accessible
-              communication tools for non-speaking children in the world. The
-              system utilizes modern web technologies (HTML5, CSS3, JavaScript,
-              Web Speech API) to create an intuitive interface for sentence
-              construction through visual symbols, with text-to-speech output in
-              both languages. The solution specifically addresses the needs of
-              2,200+ non-speaking individuals in Bahrain, with architecture
-              designed for scalability across the world.
+              This research presents VoiceBridge, a culturally-aware bilingual (Arabic-English) augmentative and alternative communication platform developed to address the significant gap in accessible communication tools for non-speaking children in the world. The system utilizes modern web technologies (HTML5, CSS3, JavaScript, Web Speech API) to create an intuitive interface for sentence construction through visual symbols, with text-to-speech output in both languages. The solution specifically addresses the needs of 2,200+ non-speaking individuals in Bahrain, with architecture designed for scalability across the world.
             </div>
             <div class="project-technical">
               <span class="tech-badge primary">JavaScript</span>
@@ -715,17 +824,19 @@
               <span class="tech-badge">CSS3</span>
               <span class="tech-badge">Web Speech API</span>
             </div>
-            <div style="display: flex; gap: 1rem; margin-top: 2rem">
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
               <a
                 href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.176171227.71329551/v2"
                 class="contact-link"
                 style="background: var(--primary-blue)"
+                target="_blank"
                 ><i class="fas fa-file-pdf"></i> Read Paper</a
               >
               <a
                 href="https://github.com/Bader-Aljaberi/VoiceBridge"
                 class="contact-link"
                 style="background: var(--accent-teal)"
+                target="_blank"
                 ><i class="fab fa-github"></i> View Code</a
               >
             </div>
@@ -750,15 +861,10 @@
             <div class="project-header">
               <h3 class="project-title">NASA Space Biology Knowledge Engine</h3>
               <p class="project-context">NASA Space Apps hackathon 2025 | Bahrain Polytechnic</p>
-
             </div>
             <div class="project-body">
               <p class="project-description">
-                Led the school's team and developed an interactive data visualization platform for NASA's
-                space biology research, enabling researchers and educators to
-                explore organism responses to space environments through
-                intuitive analytics interfaces and knowledge graph
-                visualizations.
+                Led the school's team and developed an interactive data visualization platform for NASA's space biology research, enabling researchers and educators to explore organism responses to space environments through intuitive analytics interfaces and knowledge graph visualizations.
               </p>
               <div class="project-technical">
                 <span class="tech-badge">React 18</span>
@@ -768,13 +874,70 @@
                 <span class="tech-badge">Tailwind CSS</span>
                 <span class="tech-badge">NASA Data APIs</span>
               </div>
-              <div style="text-align: center">
+              <div class="project-links">
                 <a
                   href="https://github.com/Bader-Aljaberi/NASA-Space-Apps-Hackathon-Project"
-                  class="contact-link"
-                  style="background: var(--primary-dark); color: white"
-                  ><i class="fab fa-github"></i> Project Details - on GitHub</a>
-                
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Project Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Chatbot -->
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">Arabic-English Bilingual AI Chatbot</h3>
+              <p class="project-context">AI Engineer Internship | First Hub | Team Collaboration</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Developed a bilingual neural network chatbot during AI engineering internship. Features Arabic speech recognition using Google Speech API, intent classification with PyTorch, and supports both Modern Standard Arabic and Bahraini dialect.
+              </p>
+              <div class="project-technical">
+                <span class="tech-badge primary">PyTorch</span>
+                <span class="tech-badge">Neural Networks</span>
+                <span class="tech-badge">Arabic NLP</span>
+                <span class="tech-badge">Flask API</span>
+                <span class="tech-badge">Speech Recognition</span>
+                <span class="tech-badge">camel-tools</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Bader-Aljaberi/arabic-english-chatbot"
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Project Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Internship Project -->
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">Academic Track Recommendation Dashboard</h3>
+              <p class="project-context">Software Engineering Internship | Almoayyed Commercial Services</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Built a production AI-powered recommendation system during professional internship. Developed full-stack dashboard for high school academic track selection using multi-criteria weighted scoring algorithms.
+              </p>
+              <div class="project-technical">
+                <span class="tech-badge primary">Python/Flask</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">Algorithm Design</span>
+                <span class="tech-badge">Agile Development</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Bader-Aljaberi/academic-track-recommender-internship"
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Case Study</a
+                >
               </div>
             </div>
           </div>
@@ -789,11 +952,7 @@
             </div>
             <div class="project-body">
               <p class="project-description">
-                Built a specialized chatbot for Gulf Cooperation Council tourism
-                and culture with real-time AI responses, Node.js/Express
-                backend, and responsive design. Demonstrates practical NLP
-                implementation for region-specific information retrieval and
-                conversational AI.
+                Built a specialized chatbot for Gulf Cooperation Council tourism and culture with real-time AI responses, Node.js/Express backend, and responsive design.
               </p>
               <div class="project-technical">
                 <span class="tech-badge primary">Node.js</span>
@@ -803,181 +962,131 @@
                 <span class="tech-badge">JavaScript</span>
                 <span class="tech-badge">HTML/CSS</span>
               </div>
-              <div style="text-align: center">
+              <div class="project-links">
                 <a
                   href="https://github.com/Bader-Aljaberi/nasser-bot-gcc-assistant"
-                  class="contact-link"
-                  style="background: var(--primary-dark); color: white"
-                  ><i class="fab fa-github"></i> Project Details - on GitHub</a>
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Project Details</a>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Cybersecurity Research -->
-          <div class="academic-project animate">
-            <div class="project-header">
-              <h3 class="project-title">Arabic-English Bilingual AI Chatbot</h3>
-              <p class="project-context">AI Engineer Internship | First Hub | Team Collaboration</p>
-            </div>
-            <div class="project-body">
-              <p class="project-description">
-                Developed a bilingual neural network chatbot during AI engineering internship.
-                Features Arabic speech recognition using Google Speech API, intent classification
-                with PyTorch, and supports both Modern Standard Arabic and Bahraini dialect.
-                Created as a practical solution for client communication needs with REST API backend.
+        <!-- Awards Section -->
+        <section id="awards">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Achievements and Awards</h2>
+              <p class="section-subtitle">
+                Recognition for academic excellence, technical innovation, and leadership
               </p>
-              <div class="project-technical">
-                <span class="tech-badge primary">PyTorch</span>
-                <span class="tech-badge">Neural Networks</span>
-                <span class="tech-badge">Arabic NLP</span>
-                <span class="tech-badge">Flask API</span>
-                <span class="tech-badge">Speech Recognition</span>
-                <span class="tech-badge">camel-tools</span>
+            </div>
+    
+            <div class="awards-grid">
+              <div class="award-card animate">
+                <div class="award-icon">🏆</div>
+                <h3 class="award-title">Distinguished Dragon Award - Grade 12</h3>
+                <p class="award-organization">Modern Knowledge Schools</p>
+                <p class="award-description">
+                  Awarded for exceptional contributions to technology and
+                  innovation, nominated by faculty for leadership in STEM
+                  initiatives and research potential.
+                </p>
+                <div class="award-links">
+                  <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                     class="view-link" 
+                     target="_blank">
+                    <i class="fas fa-certificate"></i> View Award
+                  </a>
+                </div>
               </div>
-              <div style="text-align: center">
-                <a
-                  href="https://github.com/Bader-Aljaberi/arabic-english-chatbot"
-                  class="contact-link"
-                  style="background: var(--primary-dark); color: white"
-                  ><i class="fab fa-github"></i> Project Details - on GitHub</a
-                >
+    
+              <div class="award-card animate">
+                <div class="award-icon">🏆</div>
+                <h3 class="award-title">Certificate of Achievement - Grade 10</h3>
+                <p class="award-organization">Modern Knowledge Schools</p>
+                <p class="award-description">
+                  Awarded for high academic performance with GPA 3.98
+                </p>
+                <div class="award-links">
+                  <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                     class="view-link" 
+                     target="_blank">
+                    <i class="fas fa-certificate"></i> View Award
+                  </a>
+                </div>
               </div>
-            </div>
+    
+              <div class="award-card animate">
+                <div class="award-icon">🏆</div>
+                <h3 class="award-title">Distinguished Dragon Award - Grade 10</h3>
+                <p class="award-organization">Modern Knowledge Schools</p>
+                <p class="award-description">
+                  Selected and honored with this certificate for demonstrating the
+                  school's mission.
+                </p>
+                <div class="award-links">
+                  <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                     class="view-link" 
+                     target="_blank">
+                    <i class="fas fa-certificate"></i> View Award
+                  </a>
+                </div>
+              </div>
+    
+              <div class="award-card animate">
+                <div class="award-icon">🏆</div>
+                <h3 class="award-title">Certificate of Achievement - Algebra II</h3>
+                <p class="award-organization">Modern Knowledge Schools</p>
+                <p class="award-description">
+                  Awarded for high academic performance in Algebra II and exemplary
+                  leadership as class captain.
+                </p>
+                <div class="award-links">
+                  <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                     class="view-link" 
+                     target="_blank">
+                    <i class="fas fa-certificate"></i> View Award
+                  </a>
+                </div>
+              </div>
+              
+              <div class="award-card animate">
+                <div class="award-icon">🏆</div>
+                <h3 class="award-title">Certificate of Achievement - Grade 11</h3>
+                <p class="award-organization">Modern Knowledge Schools</p>
+                <p class="award-description">
+                  Awarded for high academic performance with GPA 3.80
+                </p>
+                <div class="award-links">
+                  <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                     class="view-link" 
+                     target="_blank">
+                    <i class="fas fa-certificate"></i> View Award
+                  </a>
+                </div>
+              </div>
+    
+               <div class="award-card animate">
+                <div class="award-icon">🏆</div>
+                <h3 class="award-title">Talented Youth of Bahrain Science Center 2025</h3>
+                <p class="award-organization">Bahrain Science Center</p>
+                <p class="award-description">
+                  Nominated as one of the Talented Youth of the Bahrain Science Center 2025 following participation in TechStride National Program for 2 years.
+                </p>
+                <div class="award-links">
+                  <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                     class="view-link" 
+                     target="_blank">
+                    <i class="fas fa-certificate"></i> View Award
+                  </a>
+                </div>
+              </div>
           </div>
-
-          <!-- Professional Internship Project -->
-<div class="academic-project animate">
-  <div class="project-header">
-    <h3 class="project-title">Academic Track Recommendation Dashboard</h3>
-    <p class="project-context">Software Engineering Internship | Almoayyed Commercial Services</p>
-  </div>
-  <div class="project-body">
-    <p class="project-description">
-      Built a production AI-powered recommendation system during professional internship.
-      Developed full-stack dashboard for high school academic track selection using
-      multi-criteria weighted scoring algorithms. Implemented Python/Flask backend with
-      React frontend, PostgreSQL database design, and Redis caching for scalability.
-      Collaborated in Agile team environment with code reviews and professional practices.
-    </p>
-    <div class="project-technical">
-      <span class="tech-badge primary">Python/Flask</span>
-      <span class="tech-badge">React</span>
-      <span class="tech-badge">PostgreSQL</span>
-      <span class="tech-badge">Redis</span>
-      <span class="tech-badge">Algorithm Design</span>
-      <span class="tech-badge">Agile Development</span>
-    </div>
-    <div style="text-align: center">
-      <a
-        href="https://github.com/Bader-Aljaberi/academic-track-recommender-internship"
-        class="contact-link"
-        style="background: var(--primary-dark); color: white"
-        ><i class="fab fa-github"></i> Case Study Documentation</a
-      >
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Achievements and Awards</h2>
-        </div>
-
-        <div class="awards-grid">
-          <div class="award-card animate">
-            <h3 class="award-title">Distinguished Dragon Award - Grade 12</h3>
-            <p class="award-organization">Modern Knowledge Schools</p>
-            <p class="award-description">
-              Awarded for exceptional contributions to technology and
-              innovation, nominated by faculty for leadership in STEM
-              initiatives and research potential.
-            </p>
-            <div class="project-links" style="margin-top: 1.5rem;">
-            <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-              <i class="fas fa-certificate"></i> View Award
-            </a>
-          </div>
-          </div>
-
-          <div class="award-card animate">
-            <h3 class="award-title">Certificate of Achievement - Grade 10</h3>
-            <p class="award-organization">Modern Knowledge Schools</p>
-            <p class="award-description">
-              Awarded for high academic performance with GPA 3.98
-            </p>
-            <div class="project-links" style="margin-top: 1.5rem;">
-            <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-              <i class="fas fa-certificate"></i> View Award
-            </a>
-          </div>
-          </div>
-
-          <div class="award-card animate">
-            <h3 class="award-title">Distinguished Dragon Award - Grade 10</h3>
-            <p class="award-organization">Modern Knowledge Schools</p>
-            <p class="award-description">
-              Selected and honored with this certificaton for demostrating the
-              school's mission.
-            </p>
-            <div class="project-links" style="margin-top: 1.5rem;">
-            <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-              <i class="fas fa-certificate"></i> View Award
-            </a>
-          </div>
-          </div>
-
-          <div class="award-card animate">
-            <h3 class="award-title">Certificate of Achievement - Algebra II</h3>
-            <p class="award-organization">Modern Knowledge Schools</p>
-            <p class="award-description">
-              Awarded for high academic performance in Algebra II and exemplary
-              leadership as class captain. I supported my peers through weekly
-              sessions, serving as a student instructor to exlain mathematical
-              concepts.
-            </p>
-            <div class="project-links" style="margin-top: 1.5rem;">
-            <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-              <i class="fas fa-certificate"></i> View Award
-            </a>
-          </div>
-          </div>
-          
-
-          <div class="award-card animate">
-            <h3 class="award-title">Certificate of Achievement - Grade 11</h3>
-            <p class="award-organization">Modern Knowledge Schools</p>
-            <p class="award-description">
-              Awarded for high academic performance with GPA 3.80
-            </p>
-            
-            <div class="project-links" style="margin-top: 1.5rem;">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Award
-              </a>
-            </div>
-          </div>
-
-           <div class="award-card animate">
-            <h3 class="award-title">Talented Youth of the Bahrain Science Center 2025</h3>
-            <p class="award-organization">Bahrain Science Center</p>
-            <p class="award-description">
-              I had been nominated as one of the Talented Youth of the Bahrain Science Center 2025 following my participation in TechStride National Program for 2 years.
-            </p>
-            
-            <div class="project-links" style="margin-top: 1.5rem;">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Award
-              </a>
-            </div>
-          </div>
-      </div>
-    </section>
-
+        </section>
     <!-- Leadership Section -->
     <section id="leadership">
       <div class="container">
@@ -988,323 +1097,282 @@
           </p>
         </div>
 
-        <div
-          class="academic-projects"
-          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
-        >
-        <div class="academic-project animate">
-          <div class="project-header">
-            <h3 class="project-title">Robotic Instructor</h3>
-            <p class="project-context">
-              Baraa Training Center - Ministry of Youth Affairs
-            </p>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Volunteered to train 50+ students in robotics.
-              Developed curriculum focused on hands-on learning and
-              21st-century skill development.
-            </p>
-            <div class="project-links">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Certificate and event's photos
-              </a>
-            
+        <div class="academic-projects" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))">
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">Robotic Instructor</h3>
+              <p class="project-context">Baraa Training Center - Ministry of Youth Affairs</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Volunteered to train 50+ students in robotics. Developed curriculum focused on hands-on learning and 21st-century skill development.
+              </p>
+              <div class="project-links">
+                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                   class="view-link" 
+                   target="_blank">
+                  <i class="fas fa-certificate"></i> View Certificate
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <div class="academic-project animate">
-          <div class="project-header">
-            <h3 class="project-title">Cybersecurity Educator</h3>
-            <p class="project-context">Bahrain Trust Foundation</p>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Authored and led "Cyber Security & Cryptography Quest" workshops
-              teaching digital safety, ethical hacking basics, and
-              cryptography to youth through interactive challenges and
-              Google's Interland platform.
-            </p>
-            <div class="project-links">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Certificate and event's photos
-              </a>
-              
+          
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">Cybersecurity Educator</h3>
+              <p class="project-context">Bahrain Trust Foundation</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Authored and led "Cyber Security & Cryptography Quest" workshops teaching digital safety, ethical hacking basics, and cryptography to youth.
+              </p>
+              <div class="project-links">
+                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                   class="view-link" 
+                   target="_blank">
+                  <i class="fas fa-certificate"></i> View Certificate
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        
-        
-        
-        <div class="academic-project animate">
-          <div class="project-header">
-            <h3 class="project-title">AI Tools Instructor</h3>
-            <p class="project-context">Gifted Students Center - Ministry of Education</p>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Volunteered to teach primary school students about AI tools used to design chatbots, 
-              introducing them to conversational AI and no-code development platforms.
-            </p>
-            <div class="project-links">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Certificate and event's photos
-              </a>
-              
+          
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">AI Tools Instructor</h3>
+              <p class="project-context">Gifted Students Center - Ministry of Education</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Volunteered to teach primary school students about AI tools used to design chatbots, introducing them to conversational AI and no-code development platforms.
+              </p>
+              <div class="project-links">
+                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                   class="view-link" 
+                   target="_blank">
+                  <i class="fas fa-certificate"></i> View Certificate
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <div class="academic-project animate">
-          <div class="project-header">
-            <h3 class="project-title">Cyber Inventors 2025</h3>
-            <p class="project-context">Nasser Centre for Science and Technology</p>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Participated in the Cyber Guards Hackathon. Contributed and developed 
-              creative solutions in the cybersecurity field, focusing on threat 
-              detection and prevention systems.
-            </p>
-            <div class="project-links">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Certificate and event's photos
-              </a>
-             
+          
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">Cyber Inventors 2025</h3>
+              <p class="project-context">Nasser Centre for Science and Technology</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Participated in the Cyber Guards Hackathon. Contributed and developed creative solutions in the cybersecurity field.
+              </p>
+              <div class="project-links">
+                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                   class="view-link" 
+                   target="_blank">
+                  <i class="fas fa-certificate"></i> View Certificate
+                </a>
+              </div>
             </div>
           </div>
-         
-        </div>
-        <div class="academic-project animate">
-          <div class="project-header">
-            <h3 class="project-title">3rd Asian Youth Games 2025</h3>
-            <p class="project-context">Executive Committee of the Asian Youth Games</p>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Honored to be selected as a volunteer for managing the IT operations across 37 venues, supporting over 8,000 athletes from 45 countries to ensure smooth connectivity, live results, and digital coordination throughout the 12 days of competition. 
-            </p>
-            <div class="project-links">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Certificate and event's photos
-              </a>
-             
+          
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">3rd Asian Youth Games 2025</h3>
+              <p class="project-context">Executive Committee of the Asian Youth Games</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Honored to be selected as a volunteer for managing IT operations across 37 venues, supporting over 8,000 athletes from 45 countries.
+              </p>
+              <div class="project-links">
+                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                   class="view-link" 
+                   target="_blank">
+                  <i class="fas fa-certificate"></i> View Certificate
+                </a>
+              </div>
             </div>
           </div>
-          </div>
-
 
           <div class="academic-project animate">
             <div class="project-header">
               <h3 class="project-title">Volunteer & Initiatives Coordinator</h3>
-              <p class="project-context">Kaaf Humanitarian Association | 3 Years of Service</p>
+              <p class="project-context">Kaaf Humanitarian Association | 3 Years</p>
             </div>
             <div class="project-body">
               <p class="project-description">
-                Served 150+ families through seasonal support initiatives over three years. Coordinated Ramadan grocery distributions, winter clothing drives, and Souq Al-Eid initiative where families could select personalized items. Managed logistics for gift distribution, ensuring dignity in service delivery through personalized assistance and cultural sensitivity.
+                Served 150+ families through seasonal support initiatives. Coordinated Ramadan distributions, winter clothing drives, and Souq Al-Eid initiative.
               </p>
               <div class="project-links">
-                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                  <i class="fas fa-certificate"></i> View Certificate and event's photos
+                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                   class="view-link" 
+                   target="_blank">
+                  <i class="fas fa-certificate"></i> View Certificate
                 </a>
               </div>
             </div>
           </div>
         
-        <div class="academic-project animate">
-          <div class="project-header">
-            <h3 class="project-title">Youth Innovation & Volunteer</h3>
-            <p class="project-context">Mulhemoon Association | Member since January 2025</p>
+          <div class="academic-project animate">
+            <div class="project-header">
+              <h3 class="project-title">Youth Innovation Volunteer</h3>
+              <p class="project-context">Mulhemoon Association | Since Jan 2025</p>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Volunteer with a youth association focused on social entrepreneurship, innovation, and AI. Contribute to initiatives empowering youth with digital skills.
+              </p>
+              <div class="project-links">
+                <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" 
+                   class="view-link" 
+                   target="_blank">
+                  <i class="fas fa-certificate"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Competencies</h2>
+          <p class="section-subtitle">
+            Demonstrated through research projects and practical implementations
+          </p>
+        </div>
+
+        <div class="skills-matrix">
+          <div class="skill-category animate">
+            <h3>Research & Development</h3>
+            <ul class="skill-list">
+              <li>Human-Computer Interaction</li>
+              <li>AI/ML Research Methods</li>
+              <li>Academic Writing</li>
+              <li>Experimental Design</li>
+              <li>TechRxiv publication</li>
+              <li>User testing protocols</li>
+            </ul>
           </div>
-          <div class="project-body">
-            <p class="project-description">
-              Volunteer with a forward-looking youth association focused on social entrepreneurship, innovation, and artificial intelligence. Contribute to initiatives that empower young people with digital skills and support the transformation of ideas into impactful community projects aligned with national development goals.
-            </p>
-            <div class="project-links">
-              <a href="https://www.linkedin.com/in/bader-aljaberi-a593b8367/" target="_blank" class="project-link">
-                <i class="fas fa-certificate"></i> View Certificate and event's photos
-              </a>
+        
+          <div class="skill-category animate">
+            <h3>Technical Implementation</h3>
+            <ul class="skill-list">
+              <li>Full-stack Web Development</li>
+              <li>Python Programming</li>
+              <li>Machine Learning (PyTorch)</li>
+              <li>Neural Network Implementation</li>
+              <li>Database Design (PostgreSQL)</li>
+              <li>Caching Systems (Redis)</li>
+              <li>Data Visualization</li>
+              <li>API Design (REST)</li>
+              <li>Professional Software Development</li>
+              <li>Agile Methodologies</li>
+              <li>Git & Version Control</li>
+            </ul>
+          </div>
+
+          <div class="skill-category animate">
+            <h3>Domain Expertise</h3>
+            <ul class="skill-list">
+              <li>Accessibility Technology</li>
+              <li>Educational Technology</li>
+              <li>Cybersecurity Principles</li>
+              <li>Bilingual NLP</li>
+              <li>AAC platforms</li>
+              <li>STEM instruction</li>
+              <li>Hackathon solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Timeline -->
+    <section id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Research & Development Journey</h2>
+          <p class="section-subtitle">
+            Evolution of technical projects and research initiatives
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <div class="timeline-date">Aug - Nov 2025</div>
+              <h3>VoiceBridge: Bilingual AAC Research Project</h3>
+              <p>
+                Developed a web-based bilingual AAC platform for non-speaking children using JavaScript, HTML, CSS, and Web Speech API. Published research on TechRxiv with 300+ global views.
+              </p>
             </div>
           </div>
-        </div> 
-      </div>
-      
-      
-     </section>
 
-   
-      <!-- Skills Section -->
-<!-- Skills Section -->
-<section id="skills">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Technical Competencies</h2>
-      <p class="section-subtitle">
-        Demonstrated through research projects and practical implementations
-      </p>
-    </div>
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <div class="timeline-date">Oct 2025</div>
+              <h3>NASA Space Apps Challenge</h3>
+              <p>
+                Led school team in developing an interactive bioscience data visualization dashboard using React and TypeScript.
+              </p>
+            </div>
+          </div>
 
-    <div class="skills-matrix">
-      <div class="skill-category animate">
-        <h3>Research & Development</h3>
-        <ul class="skill-list">
-          <li>Human-Computer Interaction</li>
-          <li>AI/ML Research Methods</li>
-          <li>Academic Writing</li>
-          <li>Experimental Design</li>
-          <li>TechRxiv publication</li>
-          <li>User testing protocols</li>
-         
-        </ul>
-      </div>
-    
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <div class="timeline-date">Aug - Sep 2025</div>
+              <h3>Professional Software Engineering Internship</h3>
+              <p>
+                Developed full-stack AI recommendation dashboard at Almoayyed Commercial Services with Python/Flask, React, PostgreSQL, and Redis.
+              </p>
+            </div>
+          </div>
 
-      <div class="skill-category animate">
-        <h3>Technical Implementation</h3>
-        <ul class="skill-list">
-          <li>Full-stack Web Development</li>
-          <li>Python Programming</li>
-          <li>Data Visualization</li>
-          <li>Cloud Computing</li>
-          <li>VoiceBridge</li>
-          <li>Nasser Bot</li>
-          <li>NASA Space Apps</li>
-          <li>GitHub repositories</li>
-          <li>Machine Learning (PyTorch)</li>
-<li>Neural Network Implementation</li>
-<li>Database Design (PostgreSQL)</li>
-<li>Caching Systems (Redis)</li>
-<li>Professional Software Development</li>
-<li>Agile Methodologies</li>
-<li>API Design (REST)</li>
-        </ul>
-      </div>
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <div class="timeline-date">Sep - Oct 2025</div>
+              <h3>AI Engineering Internship - First Hub</h3>
+              <p>
+                Developed Arabic-English neural network chatbot with PyTorch, speech recognition, and Flask API for client communication.
+              </p>
+            </div>
+          </div>
 
-      <div class="skill-category animate">
-        <h3>Domain Expertise</h3>
-        <ul class="skill-list">
-          <li>Accessibility Technology</li>
-          <li>Educational Technology</li>
-          <li>Cybersecurity Principles</li>
-          <li>Bilingual NLP</li>
-          <li>AAC platforms</li>
-          <li>STEM instruction</li>
-          <li>Hackathon solutions</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <div class="timeline-date">Jun - Jul 2025</div>
+              <h3>TechStride AI & Robotics Program</h3>
+              <p>
+                Selected for national AI training program. Built "NasserBot" GCC cultural chatbot using Node.js and OpenRouter API.
+              </p>
+            </div>
+          </div>
 
-   <!-- Academic Timeline -->
-<section id="timeline">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Research & Development Journey</h2>
-      <p class="section-subtitle">
-        Evolution of technical projects and research initiatives
-      </p>
-    </div>
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <div class="timeline-date">Sep - Nov 2025</div>
+              <h3>Cybersecurity Education Initiative</h3>
+              <p>
+                Founded and led cyber literacy competition for 50+ students with real-world attack simulations and cryptographic challenges.
+              </p>
+            </div>
+          </div>
 
-    <div class="timeline">
-      <!-- VoiceBridge Research -->
-      <div class="timeline-item animate">
-        <div class="timeline-content">
-          <div class="timeline-date">Aug - Nov 2025</div>
-          <h3>VoiceBridge: Bilingual AAC Research Project</h3>
-          <p>
-            Developed a web-based bilingual AAC platform for non-speaking children using 
-            JavaScript, HTML, CSS, and Web Speech API. Published research on TechRxiv 
-            with 300+ global views and 100+ downloads.
-          </p>
-          
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <div class="timeline-date">Oct - Dec 2025</div>
+              <h3>Harvard CS50: Computer Science Fundamentals</h3>
+              <p>
+                Completed rigorous computer science course with projects in C, Python, and JavaScript.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- NASA Space Apps -->
-      <div class="timeline-item animate">
-        <div class="timeline-content">
-          <div class="timeline-date">Oct 2025</div>
-          <h3>NASA Space Apps Challenge</h3>
-          <p>
-            Led school team in developing an interactive bioscience data visualization 
-            dashboard using React and TypeScript. Directed team strategy and presented 
-            solution to the judges.
-          </p>
-          
-        </div>
-      </div>
-
-      <div class="timeline-item animate">
-  <div class="timeline-content">
-    <div class="timeline-date">Aug - Sep 2025</div>
-    <h3>Professional Software Engineering Internship</h3>
-    <p>
-      Developed full-stack AI recommendation dashboard at Almoayyed Commercial Services.
-      Built weighted scoring algorithms, Python/Flask backend with React frontend,
-      PostgreSQL database with Redis caching for scalability.
-    </p>
-  </div>
-</div>
-
-      <!-- AI Engineer Internship -->
-      <div class="timeline-item animate">
-        <div class="timeline-content">
-          <div class="timeline-date">Sep - Oct 2025</div>
-          <h3>AI Engineering Internship - First Hub</h3>
-          <p>
-            Developed Arabic-English neural network chatbot with PyTorch, speech recognition, and Flask API.
-      Built bilingual AI system supporting Modern Standard Arabic and Bahraini dialect for client communication.
-          </p>
-          
-        </div>
-      </div>
-
-      <!-- TechStride Program -->
-      <div class="timeline-item animate">
-        <div class="timeline-content">
-          <div class="timeline-date">Jun - Jul 2025</div>
-          <h3>TechStride AI & Robotics Program</h3>
-          <p>
-            Selected for national AI training program. Built "NasserBot" GCC cultural 
-            chatbot using Node.js and OpenRouter API with Mistral 7B. Recognized as 
-            Talented Youth of Bahrain Science Centre.
-          </p>
-          
-        </div>
-      </div>
-
-      <!-- Cybersecurity Education -->
-      <div class="timeline-item animate">
-        <div class="timeline-content">
-          <div class="timeline-date">Sep - Nov 2025</div>
-          <h3>Cybersecurity Education Initiative</h3>
-          <p>
-            Founded and led cyber literacy competition for 50+ students with real-world 
-            attack simulations. Designed automation tools and cryptographic challenges, 
-            demonstrating ability to make technical concepts accessible.
-          </p>
-         
-        </div>
-      </div>
-
-      <!-- Harvard CS50 -->
-      <div class="timeline-item animate">
-        <div class="timeline-content">
-          <div class="timeline-date">Oct - Dec 2025</div>
-          <h3>Harvard CS50: Computer Science Fundamentals</h3>
-          <p>
-            Completed rigorous computer science course with projects in C, Python, and 
-            JavaScript. Applied skills to build personal portfolio website and deepen 
-            computational thinking foundations.
-          </p>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -1312,20 +1380,17 @@
         <div class="section-header">
           <h2 class="section-title">Research Collaboration</h2>
           <p class="section-subtitle">
-            Seeking undergraduate research opportunities in human-centered AI
-            and accessibility computing
+            Seeking undergraduate research opportunities in human-centered AI and accessibility computing
           </p>
         </div>
 
         <div class="academic-footer">
           <div class="footer-content">
-            <h3 style="margin-bottom: 1.5rem">
+            <h3 style="margin-bottom: 1rem; font-size: 1.3rem">
               Prospective Computer Science Undergraduate
             </h3>
-            <p style="margin-bottom: 2rem; opacity: 0.9">
-              Interested in research positions, internships, and collaborative
-              projects at the intersection of AI, accessibility, and educational
-              technology.
+            <p style="margin-bottom: 1.5rem; opacity: 0.9; font-size: 0.95rem">
+              Interested in research positions, internships, and collaborative projects at the intersection of AI, accessibility, and educational technology.
             </p>
 
             <div class="academic-contact">
@@ -1351,9 +1416,8 @@
               </a>
             </div>
 
-            <p style="margin-top: 3rem; opacity: 0.7; font-size: 0.9rem">
-              &copy; 2025 Bader Aljaberi. This portfolio reflects ongoing
-              research in social impact computing.
+            <p style="margin-top: 2rem; opacity: 0.7; font-size: 0.85rem">
+              &copy; 2025 Bader Aljaberi. This portfolio reflects ongoing research in social impact computing.
             </p>
           </div>
         </div>
@@ -1370,7 +1434,7 @@
             const targetElement = document.querySelector(targetId);
 
             window.scrollTo({
-              top: targetElement.offsetTop - 80,
+              top: targetElement.offsetTop - 60,
               behavior: "smooth",
             });
 
@@ -1402,16 +1466,17 @@
 
         // Nav scroll effect
         let lastScroll = 0;
+        const nav = document.querySelector("nav");
+        
         window.addEventListener("scroll", () => {
           const currentScroll = window.pageYOffset;
-          const nav = document.querySelector("nav");
 
           if (currentScroll <= 0) {
             nav.style.boxShadow = "0 2px 15px rgba(0, 0, 0, 0.08)";
             return;
           }
 
-          if (currentScroll > lastScroll) {
+          if (currentScroll > lastScroll && currentScroll > 100) {
             // Scrolling down
             nav.style.transform = "translateY(-100%)";
           } else {
